@@ -1,4 +1,5 @@
 langchain
 langchain-anthropic
-streamlit
 python-dotenv
+fastapi
+uvicorn
