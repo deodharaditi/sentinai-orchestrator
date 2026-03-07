@@ -21,6 +21,7 @@ SentinAI acts as an intelligent "Gatekeeper" between your Observation layer (Spl
 * **Contextual Worknotes:** All intermediate anomalies and technical logs are automatically summarized by the LLM and appended to the existing ticket worknotes, keeping the inbox clean.
 * **Human-Readable Summaries:** Uses LangChain to translate complex JSON error logs into plain-English status updates.
 * **Service Topology Map:** A live React Flow graph of the infrastructure. When an alert fires, the affected node highlights red and downstream dependencies turn amber — demonstrating blast radius awareness.
+* **Interactive Ghost Log:** Every suppressed email is logged at the bottom of the dashboard. Clicking an entry shows a side-by-side "before vs. after" — the raw noisy alert that would have been emailed versus the AI-generated SITREP written to the worknote instead.
 
 ---
 

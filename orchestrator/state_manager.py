@@ -70,6 +70,8 @@ class IncidentState:
                 "alert_id": alert_id,
                 "timestamp": datetime.datetime.now().strftime("%H:%M:%S"),
                 "preview": note[:80] + ("..." if len(note) > 80 else ""),
+                "raw_alert": note,
+                "sitrep": exec_summary or "",
             })
             return "UPDATED"
         return "NOT_FOUND"
