@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Header from "@/components/Header";
-import AlertPanel from "@/components/AlertPanel";
+import TopologyMap from "@/components/TopologyMap";
 import IncidentBoard from "@/components/IncidentBoard";
 import AgentConsole from "@/components/AgentConsole";
 import RcaPanel from "@/components/RcaPanel";
@@ -24,6 +24,8 @@ export type SuppressedEntry = {
   alert_id: string;
   timestamp: string;
   preview: string;
+  raw_alert: string;
+  sitrep: string;
 };
 
 export type RcaMatch = {
@@ -105,7 +107,7 @@ export default function Dashboard() {
       />
 
       <div className="flex flex-1 overflow-hidden">
-        <AlertPanel onFireAlert={fireAlert} loading={loading} />
+        <TopologyMap tickets={tickets} />
 
         <main className="flex flex-1 gap-4 p-4 overflow-hidden">
           <IncidentBoard

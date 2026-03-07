@@ -20,6 +20,7 @@ SentinAI acts as an intelligent "Gatekeeper" between your Observation layer (Spl
 * **Intelligent Suppression:** It triggers exactly **two** emails—one for the initial alert and one for the final resolution.
 * **Contextual Worknotes:** All intermediate anomalies and technical logs are automatically summarized by the LLM and appended to the existing ticket worknotes, keeping the inbox clean.
 * **Human-Readable Summaries:** Uses LangChain to translate complex JSON error logs into plain-English status updates.
+* **Service Topology Map:** A live React Flow graph of the infrastructure. When an alert fires, the affected node highlights red and downstream dependencies turn amber — demonstrating blast radius awareness.
 
 ---
 
@@ -37,7 +38,7 @@ sentinai-orchestrator/
 │   │   └── globals.css      # Dark theme + custom animations
 │   └── components/
 │       ├── Header.tsx        # Metrics bar + Fire Alert dropdown + Reset
-│       ├── AlertPanel.tsx    # Custom alert input sidebar
+│       ├── TopologyMap.tsx   # Live React Flow service topology with blast radius
 │       ├── IncidentBoard.tsx # ServiceNow ticket cards
 │       ├── AgentConsole.tsx  # Typewriter terminal output
 │       ├── RcaPanel.tsx      # RCA match display
