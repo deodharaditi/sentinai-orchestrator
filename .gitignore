@@ -22,3 +22,8 @@ langsmith_keys.txt
 # OS
 .DS_Store
 Thumbs.db
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
