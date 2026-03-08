@@ -120,7 +120,11 @@ prompt = ChatPromptTemplate.from_messages([
      "3. If EXISTS and In Progress: call process_incident_update (suppresses email, writes SITREP). "
         "If the ticket has 3+ updates, also call request_human_intervention.\n"
      "4. If EXISTS and Resolved: call process_incident_update to re-open.\n"
-     "Never send duplicate emails. All intermediate alerts go to worknotes only."),
+     "Never send duplicate emails. All intermediate alerts go to worknotes only.\n\n"
+     "FINAL RESPONSE: Write a brief incident status report (under 100 words) covering only: "
+     "what action was taken, the current ticket status, and what was suppressed or escalated. "
+     "Do NOT include root cause, suggested fix, or knowledge base findings — those are shown in a dedicated RCA panel. "
+     "Use markdown bold for labels."),
     ("human", "{input}"),
     MessagesPlaceholder(variable_name="agent_scratchpad"),
 ])
