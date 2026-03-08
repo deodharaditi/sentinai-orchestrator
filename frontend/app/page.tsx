@@ -8,7 +8,7 @@ import AgentConsole from "@/components/AgentConsole";
 import RcaPanel from "@/components/RcaPanel";
 import GhostLogStrip from "@/components/GhostLogStrip";
 
-const API = "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 export type Ticket = {
   ticket_id: string;
