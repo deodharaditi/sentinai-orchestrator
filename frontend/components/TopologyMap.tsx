@@ -150,7 +150,7 @@ export default function TopologyMap({ tickets }: Props) {
   return (
     <div
       style={{ backgroundColor: "#161b22", borderRight: "1px solid #30363d", width: "288px" }}
-      className="shrink-0 flex flex-col overflow-hidden"
+      className="shrink-0 flex flex-col overflow-hidden h-full"
     >
       {/* Header */}
       <div

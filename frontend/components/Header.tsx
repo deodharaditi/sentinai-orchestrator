@@ -37,7 +37,7 @@ export default function Header({ activeIncidents, emailsSent, emailsSuppressed, 
       <div className="flex items-center gap-2 mr-4">
         <span className="text-lg">🛡️</span>
         <span className="font-bold text-white tracking-tight">SentinAI</span>
-        <span style={{ color: "#8b949e" }} className="text-xs font-normal ml-1">AIOps Incident Command</span>
+        <span style={{ color: "#8b949e" }} className="text-xs font-normal ml-1">Autonomous Incident Response</span>
       </div>
 
       <div className="flex gap-6 flex-1">
