@@ -15,6 +15,10 @@ In multinational infrastructures, a single system anomaly often triggers a "noti
 ## The Solution: SentinAI
 SentinAI acts as an intelligent "Gatekeeper" between your Observation layer (Splunk/Grafana) and your Action layer (ServiceNow).
 
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/75ccd375-0119-4d76-8675-7cd3f49768fe" />
+
+
 ### Key Features
 * **State-Aware Deduplication:** The agent queries the ServiceNow API to check for existing open incidents before acting.
 * **Intelligent Suppression:** It triggers exactly **two** emails—one for the initial alert and one for the final resolution.
