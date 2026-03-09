@@ -4,6 +4,8 @@
 
 SentinAI is an AIOps orchestration agent built with **LangChain**, **FastAPI**, and **Next.js**. It solves the "Email Storm" problem in large-scale enterprise monitoring by shifting from repetitive, time-based notifications to a single, state-aware "Source of Truth" in ServiceNow.
 
+**[Live Demo](https://sentinai-orchestrator.vercel.app/)** · **[Demo Video](https://www.loom.com/share/f3b6c12433544753a6edc6597bcf122b)** · **[API](https://web-production-c37f9c.up.railway.app/docs)**
+
 ---
 
 ## The Problem: Alert Fatigue
